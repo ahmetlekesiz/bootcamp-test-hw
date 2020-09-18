@@ -35,7 +35,7 @@ public class NumberOfUniqueWordsTests {
         NumberOfUniqueWords sut = new NumberOfUniqueWords();
 
         // Act
-        String input = "This is a test, and a good test! WTF!?#%";
+        String input = "This is a test, and a good test!    WTF!?#%";
         int result = sut.getNumberOfUniqueWords(input);
 
         // Verify
