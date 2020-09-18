@@ -4,7 +4,7 @@ import java.util.Map;
 public class NumberOfUniqueWords {
 
     public int getNumberOfUniqueWords(String input) {
-        input = input.replaceAll("[^a-zA-Z0-9']", " ");
+        input = input.replaceAll("[^a-zA-Z']", " ");
         // Create HashMap By Using Only Unique Words
         // Reference: https://www.tutorialspoint.com/java-program-to-print-all-unique-words-of-a-string
         String[] strArray = input.split("\\s+");

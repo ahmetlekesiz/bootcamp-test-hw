@@ -54,4 +54,29 @@ public class NumberOfUniqueWordsTests {
         // Verify
         assertThat(result).isEqualTo(8);
     }
+
+    @Test
+    public void getNumberOfUniqueWords_WhenAllWordsAreNotUniqueAndHasNumber_ShouldReturnNumberOfUniqueWords(){
+        // Arrange
+        NumberOfUniqueWords sut = new NumberOfUniqueWords();
+
+        // Act
+        String input = "It is a test and I am really stuck to find a new sentence for the last 4 unit tests.";
+        int result = sut.getNumberOfUniqueWords(input);
+        // Verify
+        assertThat(result).isEqualTo(18);
+    }
+
+    @Test
+    public void getNumberOfUniqueWords_WhenAllWordsAreNotUniqueAndHasDifferentCapitalization_ShouldReturnNumberOfUniqueWords(){
+        // Arrange
+        NumberOfUniqueWords sut = new NumberOfUniqueWords();
+
+        // Act
+        String input = "I may go to Berlin in May 2022.";
+        int result = sut.getNumberOfUniqueWords(input);
+
+        // Verify
+        assertThat(result).isEqualTo(7);
+    }
 }
