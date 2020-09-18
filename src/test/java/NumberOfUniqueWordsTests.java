@@ -4,7 +4,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 public class NumberOfUniqueWordsTests {
 
     @Test
-    public void getNumberOfUniqueWords_WhenAllWordsUnique_ShouldReturnNumberOfWords(){
+    public void getNumberOfUniqueWords_WhenAllWordsAreUnique_ShouldReturnNumberOfWords(){
         // Arrange
         NumberOfUniqueWords sut = new NumberOfUniqueWords();
 

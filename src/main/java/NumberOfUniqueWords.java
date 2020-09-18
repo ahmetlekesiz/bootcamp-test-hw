@@ -1,5 +1,14 @@
 public class NumberOfUniqueWords {
+
+
+
+    public void main(String[] args) {
+        getNumberOfUniqueWords("bu bir deneme");
+    }
+
     public int getNumberOfUniqueWords(String input) {
-        return 0;
+        input = input.replace(".", "").replace(",", " ");
+        int numberOfUniqueWords = input.split(" ").length;
+        return numberOfUniqueWords;
     }
 }
